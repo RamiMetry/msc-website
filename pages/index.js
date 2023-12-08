@@ -5,8 +5,6 @@ import AboutUsSection from "@/sections/landing/about-us";
 import ServicesSection from "@/sections/landing/services";
 import OurCommitment from "@/sections/landing/our-commitment";
 import Blog from "@/sections/landing/blog";
-import { useEffect } from "react";
-import { useState } from "react";
 
 export default function Home() {
   return (

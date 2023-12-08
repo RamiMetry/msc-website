@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
@@ -10,7 +10,7 @@ import Loader from "../loader/loader";
 import styles from "./footer.module.scss";
 
 const Footer = () => {
-  const tempBlog = [
+  const blogData = [
     {
       title: "Blog Title",
       slug: "blog-title",
@@ -30,17 +30,8 @@ const Footer = () => {
       text: "text area text area text area text area text area text area text area ",
     },
   ];
-  const [blogData, setBlogData] = useState(null);
 
   const currentYear = new Date().getFullYear();
-
-  useEffect(() => {
-    if (tempBlog) {
-      tempBlog.sort((a, b) => new Date(b.date) - new Date(a.date));
-      const newestBlog = tempBlog.slice(0, 2);
-      setBlogData(newestBlog);
-    }
-  }, [tempBlog]);
 
   return (
     <div className={styles.footer}>
@@ -107,7 +98,7 @@ const Footer = () => {
             <p className={styles.linksTitle}>blog</p>
 
             {blogData ? (
-              blogData.map((item, index) => (
+              blogData.slice(0, 2).map((item, index) => (
                 <div key={index}>
                   <FooterArticleCard data={item} />
                 </div>

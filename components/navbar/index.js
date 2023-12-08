@@ -1,17 +1,14 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
-
-import { useWindowSize } from "react-use";
 
 import MainButton from "../main-button";
 
 import styles from "./navbar.module.scss";
 
 const MainNavbar = () => {
-  const { width } = useWindowSize();
   const router = useRouter();
 
   return (
