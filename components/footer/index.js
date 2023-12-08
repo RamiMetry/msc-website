@@ -10,26 +10,6 @@ import Loader from "../loader/loader";
 import styles from "./footer.module.scss";
 
 const Footer = () => {
-  const blogData = [
-    {
-      title: "Blog Title",
-      slug: "blog-title",
-      date: "20-5-2023",
-      text: "text area text area text area text area text area text area text area ",
-    },
-    {
-      title: "Blog Title",
-      slug: "blog-title",
-      date: "20-5-2023",
-      text: "text area text area text area text area text area text area text area ",
-    },
-    {
-      title: "Blog Title",
-      slug: "blog-title",
-      date: "20-5-2023",
-      text: "text area text area text area text area text area text area text area ",
-    },
-  ];
 
   const currentYear = new Date().getFullYear();
 
@@ -54,7 +34,7 @@ const Footer = () => {
             <p className={styles.linksTitle} style={{ marginBottom: "0" }}>
               Address
             </p>
-            <p className={styles.text}>address</p>
+            <p className={styles.text}>Beirut, Lebanon</p>
             <div>
               <Socials
                 facebook="url"
@@ -81,12 +61,8 @@ const Footer = () => {
                 <Link href="/#our-commitment" className={styles.footerLink}>
                   <li>Our Commitment</li>
                 </Link>
-                <Link href="/articles-and-blog" className={styles.footerLink}>
-                  <li>Blog</li>
-                </Link>
-                {/* ///cms */}
                 <Link
-                  href={`mailto:email@email.com?subject=hello`}
+                  href={`mailto:email@msc.com?subject=hello`}
                   className={styles.footerLink}
                 >
                   <li>Contact us</li>
@@ -94,24 +70,11 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col lg={4} className={styles.linksCol}>
-            <p className={styles.linksTitle}>blog</p>
-
-            {blogData ? (
-              blogData.slice(0, 2).map((item, index) => (
-                <div key={index}>
-                  <FooterArticleCard data={item} />
-                </div>
-              ))
-            ) : (
-              <Loader color="var(--orange)" />
-            )}
-          </Col>
         </Row>
         <Row className={styles.rightsRow}>
           {/* ///cms */}
           <div className={styles.copyright}>
-            &copy; {currentYear} websiteName. All Rights Reserved.
+            &copy; {currentYear} MSC. All Rights Reserved.
           </div>
         </Row>
       </Container>

@@ -3,7 +3,12 @@ import { Container, Col, Row, Accordion } from "react-bootstrap";
 
 import styles from "./why-choose-us.module.scss";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({
+  small_title,
+  title,
+  text,
+  faq,
+}) => {
   const whyUsData = [
     {
       title: "title1",
@@ -31,29 +36,20 @@ const WhyChooseUs = () => {
       <Container>
         <Row>
           <Col lg={6} className={styles.infoCol}>
-            <p className="section-title-small">Why Choose Us section title</p>
-            <p className="section-title-big">Why Choose Us title</p>
+            <p className="section-title-small">{small_title}</p>
+            <p className="section-title-big">{title}</p>
 
             <div className="section-text">
-              text area text area text area text areatext area text area text
-              area text area text areatext area text area text area text area
-              text areatext area text area text area text area text areatext
-              area text area text area text area text areatext area text area
-              text area text area text areatext area text area text area text
-              area text areatext area text area text area text area text
-              areatext area text area text area text area text areatext area
-              text area text area text area text areatext area text area text
-              area text area text areatext area text area text area text area
-              text areatext area
+              {text}
             </div>
           </Col>
           <Col lg={6} className={styles.accCol}>
             <Accordion defaultActiveKey="0">
-              {whyUsData.map((item, index) => (
+              {faq?.map((item, index) => (
                 <Accordion.Item key={index} eventKey={index.toString()}>
                   <Accordion.Header>{item.title}</Accordion.Header>
                   <Accordion.Body>
-                    <div>{item.text}</div>
+                    <div>{item.answer}</div>
                   </Accordion.Body>
                 </Accordion.Item>
               ))}

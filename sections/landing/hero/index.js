@@ -2,7 +2,7 @@ import { Container, Col, Row } from "react-bootstrap";
 
 import styles from "./hero.module.scss";
 
-const Hero = () => {
+const Hero = ({ welcome, title }) => {
   return (
     <div
       className={styles.wrapper}
@@ -14,16 +14,16 @@ const Hero = () => {
         <Container>
           <Row className={styles.heroContainer}>
             <Col>
-              <p className="section-title-small">WELCOME</p>
+              <p className="section-title-small">{welcome}</p>
               <p className="section-title-big" style={{ fontSize: "48px" }}>
-                title
+                {title}
               </p>
-              <div className="section-text">
+              {/* <div className="section-text">
                 text area text area text area text area text area text area text
                 area text area text area text area text area text area text area
                 text area text area text area text area text area text area text
                 area
-              </div>
+              </div> */}
             </Col>
           </Row>
         </Container>

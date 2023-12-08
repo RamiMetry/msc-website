@@ -5,7 +5,7 @@ import SerciceCard from "@/components/service-card";
 
 import styles from "./Services.module.scss";
 
-const ServicesSection = () => {
+const ServicesSection = ({title}) => {
   const servicesData = [
     {
       image: "/images/solar-purple.svg",
@@ -45,12 +45,12 @@ const ServicesSection = () => {
           <Row>
             <Col className={styles.infoCol}>
               <p className="section-title-small">section title</p>
-              <p className="section-title-big">title</p>
-              <div className="section-text">
+              <p className="section-title-big">{title}</p>
+              {/* <div className="section-text">
                 text area text area text area text areatext area text area text
                 area text area text areatext area text area text area text area
                 text areatext area text area text
-              </div>
+              </div> */}
             </Col>
           </Row>
           <Row>

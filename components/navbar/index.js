@@ -42,9 +42,6 @@ const MainNavbar = () => {
             <Link href="/#our-commitment" className={styles.navbarLink}>
               <div>Our Commitment</div>
             </Link>
-            <Link href="/blogs" className={styles.navbarLink}>
-              <div>Blog</div>
-            </Link>
             {/* ///cms */}
             <Link
               href={`mailto:email@email.com?subject=hello`}
@@ -58,7 +55,7 @@ const MainNavbar = () => {
             {/* ///cms */}
             <MainButton
               isPhone
-              text="phone number"
+              text="+961-71123456"
               isSmall
               onClick={() => {
                 router.push(`tel:phone number`);

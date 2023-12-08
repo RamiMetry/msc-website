@@ -4,20 +4,16 @@ import Image from "next/image";
 
 import styles from "./AboutUs.module.scss";
 
-const AboutUsSection = () => {
+const AboutUsSection = ({title, text}) => {
   return (
     <div id="aboutUs">
       <Container>
         <Row className={styles.aboutUs}>
           <Col lg={6} className={styles.infoCol}>
             <p className="section-title-small">About Us</p>
-            <p className="section-title-big">short quote</p>
+            <p className="section-title-big">{title}</p>
             <div className="section-text">
-              text area text area text area text areatext area text area text
-              area text area text areatext area text area text area text area
-              text areatext area text area text area text area text areatext
-              area text area text area text area text areatext area text area
-              text area text area text areatext area
+              {text}
             </div>
           </Col>
           <Col lg={6} className={styles.imageCol}>
