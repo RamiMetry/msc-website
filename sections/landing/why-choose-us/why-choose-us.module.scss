@@ -1,0 +1,25 @@
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 100%;
+}
+.accCol {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.accordion {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.toggle {
+  text-align: left;
+  width: 100%;
+}

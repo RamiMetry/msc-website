@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  padding-bottom: 48px;
+  background-color: var(--whiteBackground);
+}
+
+.pageTitle {
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--title);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dateText {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--text);
+}
+.servicesCol {
+  margin-top: 24px;
+}
+.detailsCol {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+}
+.rightCol {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  flex-direction: column;
+}
+.title {
+  width: fit-content;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  color: var(--orange);
+  font-size: 20px;
+  font-family: var(--title);
+  font-weight: 600;
+}

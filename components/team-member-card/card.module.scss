@@ -1,0 +1,33 @@
+.card {
+  margin-top: 24px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.detailsDiv {
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px 0px;
+}
+.cardTitle {
+  color: var(--purple);
+  font-size: 20px;
+  font-family: var(--title);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.cardSubtitle {
+  color: black;
+  font-size: 18px;
+  font-family: var(--text);
+  font-weight: 500;
+}
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

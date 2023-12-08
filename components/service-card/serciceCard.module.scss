@@ -1,0 +1,29 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  // cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.4s, background-color 0.4s ease-in-out;
+}
+.card:hover {
+  background-color: var(--orange);
+  @media (min-width: 991px) {
+    transform: scale(1.04);
+  }
+}
+.cardTitle {
+  color: var(--purple);
+  font-size: 18px;
+  font-family: var(--title);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.cardSubtitle {
+  color: black;
+  font-size: 14px;
+  font-family: var(--text);
+  font-weight: 300;
+}

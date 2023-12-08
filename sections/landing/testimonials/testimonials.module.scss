@@ -1,0 +1,41 @@
+.banner {
+  background-color: var(--purple);
+}
+.title {
+  color: var(--orange);
+  font-size: 32px;
+  font-family: var(--title);
+  font-weight: 500;
+}
+
+.text {
+  color: black;
+  font-size: 14px;
+  font-family: var(--text);
+  font-weight: 500;
+}
+.image {
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+  max-height: 70px;
+}
+.custRow {
+  display: flex;
+  align-items: center;
+}
+.testCol {
+  background-color: var(--orange);
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.playImage {
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+.playImage:hover {
+  transform: scale(1.2);
+}

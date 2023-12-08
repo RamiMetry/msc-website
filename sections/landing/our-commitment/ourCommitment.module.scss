@@ -1,0 +1,12 @@
+.commitment {
+  padding-top: 48px;
+}
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}

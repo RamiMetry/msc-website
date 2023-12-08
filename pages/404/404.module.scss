@@ -1,0 +1,46 @@
+.wrapper {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.heroContainer {
+  min-height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
+.notFound {
+  color: var(--orange);
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--title);
+  @media (max-width: 991px) {
+    font-size: 38px;
+  }
+}
+.error {
+  color: black;
+  font-size: 58px;
+  font-family: var(--title);
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 0 10%;
+
+  margin-bottom: 0;
+  @media (max-width: 991px) {
+    font-size: 48px;
+  }
+}
+
+.btnDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

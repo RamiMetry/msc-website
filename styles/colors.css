@@ -1,0 +1,9 @@
+/* Global Theme Variables */
+
+:root {
+  --purple: #714b67;
+  --whiteBackground: #ffffff;
+  --orange: #fe6e00;
+  --disabled1: #848484;
+  --disabled2: #5c5c5c;
+}

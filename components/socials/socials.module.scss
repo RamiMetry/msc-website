@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.socialCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.socialIcon {
+  height: 20px;
+  width: 20px;
+  color: var(--purple);
+}

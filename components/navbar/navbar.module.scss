@@ -1,0 +1,56 @@
+.mainLogo {
+  object-fit: contain;
+  width: fit-content;
+}
+.navbarBrand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarCon {
+  height: 85px;
+  background-color: var(--purple) !important;
+  color: var(--white) !important;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.navbarRoutes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.rightLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media (max-width: 991px) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+}
+
+.navbarLink {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: var(--title);
+  text-decoration: none;
+  transition: ease-in-out 0.4s;
+  position: relative;
+  @media (max-width: 991px) {
+    margin-top: 8px;
+  }
+}
+.navbarLink:hover {
+  cursor: pointer;
+}

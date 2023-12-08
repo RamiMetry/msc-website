@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gradient {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.team {
+  min-height: 100vh;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesCol {
+  @media (min-width: 991px) {
+    margin-top: 48px;
+  }
+}

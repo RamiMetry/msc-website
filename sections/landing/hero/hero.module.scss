@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.heroContainer {
+  min-height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.btnDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.gradient {
+  background-color: rgba(255, 255, 255, 0.2);
+}

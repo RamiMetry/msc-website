@@ -1,0 +1,30 @@
+.project {
+  min-height: 100vh;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtersCol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectsCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  transition: all 0.4s ease-in-out;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+}

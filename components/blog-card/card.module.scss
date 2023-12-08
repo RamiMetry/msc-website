@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 100%;
+}
+.detailsDiv {
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 18px;
+  height: 60%;
+}
+.cardTitle {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: var(--title);
+}
+.cardDate {
+  color: var(--orange);
+  font-size: 14px;
+  font-family: var(--text);
+  font-weight: 400;
+}
+.text {
+  color: black;
+  font-size: 14px;
+  font-family: var(--text);
+  font-weight: 300;
+}
+.link {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: var(--text);
+  text-decoration: none;
+  width: fit-content;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.image {
+  width: auto;
+  height: 40%;
+  object-fit: cover;
+}
