@@ -44,13 +44,8 @@ const ServicesSection = ({title}) => {
         <Container className={styles.services}>
           <Row>
             <Col className={styles.infoCol}>
-              <p className="section-title-small">section title</p>
+              <p className="section-title-small">Our Services</p>
               <p className="section-title-big">{title}</p>
-              {/* <div className="section-text">
-                text area text area text area text areatext area text area text
-                area text area text areatext area text area text area text area
-                text areatext area text area text
-              </div> */}
             </Col>
           </Row>
           <Row>
