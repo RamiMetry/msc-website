@@ -9,7 +9,7 @@ const PageBanner = ({ image, title, routingText1, routingText2, routing1 }) => {
     <div
       className={styles.wrapper}
       style={{
-        backgroundImage: `url(/images/111.jpg)`,
+        backgroundImage: `url(${image})`,
       }}
     >
       <div className={styles.bannerGradient}>
