@@ -5,33 +5,8 @@ import SerciceCard from "@/components/service-card";
 
 import styles from "./Services.module.scss";
 
-const ServicesSection = ({title}) => {
-  const servicesData = [
-    {
-      image: "/images/solar-purple.svg",
-      title: "solar systems",
-      description:
-        "this id description 1 text area text area text areatext area text area text area text area text areatext area text area text",
-    },
-    {
-      image: "/images/electricity-purple.svg",
-      title: "Electrical Services",
-      description:
-        "this id description 2 text area text area text areatext area text area text area text area text areatext area text area text",
-    },
-    {
-      image: "/images/plumbing-purple.svg",
-      title: "plumbing solutions",
-      description:
-        "this id description 3 text area text area text areatext area text area text area text area text areatext area text area text",
-    },
-    {
-      image: "/images/carpentry-purple.svg",
-      title: "carpentry fixing",
-      description:
-        "this id description 4 text area text area text areatext area text area text area text area text areatext area text area text",
-    },
-  ];
+const ServicesSection = ({ title, services }) => {
+
   return (
     <div
       id="services"
@@ -49,7 +24,7 @@ const ServicesSection = ({title}) => {
             </Col>
           </Row>
           <Row>
-            {servicesData.map((item, index) => (
+            {services?.map((item, index) => (
               <Col md={6} key={index} style={{ marginTop: "24px" }}>
                 <SerciceCard data={item} />
               </Col>

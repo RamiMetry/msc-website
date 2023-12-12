@@ -4,11 +4,11 @@ import Image from "next/image";
 
 import styles from "./details-banner.module.scss";
 
-const DetailsBanner = () => {
+const DetailsBanner = ({ price, phone}) => {
   const bannerData = [
-    { image: "/images/price.svg", title: "15$ per hour" },
+    { image: "/images/price.svg", title: `${price}$ per hour` },
     { image: "/images/24.svg", title: "24 hours support" },
-    { image: "/images/phone2.svg", title: "+961-71123456" },
+    { image: "/images/phone2.svg", title: phone },
   ];
   return (
     <div>
