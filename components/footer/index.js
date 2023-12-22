@@ -18,7 +18,7 @@ const Footer = () => {
       <Container>
         <Row className={styles.linksRow}>
           <Col
-            lg={4}
+            lg={12}
             className={styles.linksCol}
             style={{ alignItems: "center" }}
           >
@@ -42,32 +42,6 @@ const Footer = () => {
                 linkedin="url"
                 twitter="url"
               />
-            </div>
-          </Col>
-          <Col
-            lg={4}
-            className={styles.linksCol}
-            style={{ alignItems: "center" }}
-          >
-            <p className={styles.linksTitle}>quick links</p>
-            <div className={styles.linkList}>
-              <ul>
-                <Link href="/#aboutUs" className={styles.footerLink}>
-                  <li>About Us</li>
-                </Link>
-                <Link href="/#services" className={styles.footerLink}>
-                  <li>Services</li>
-                </Link>
-                <Link href="/#our-commitment" className={styles.footerLink}>
-                  <li>Our Commitment</li>
-                </Link>
-                <Link
-                  href={`mailto:email@msc.com?subject=hello`}
-                  className={styles.footerLink}
-                >
-                  <li>Contact us</li>
-                </Link>
-              </ul>
             </div>
           </Col>
         </Row>
